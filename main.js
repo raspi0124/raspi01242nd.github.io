@@ -1,10 +1,8 @@
-// ADD HEADER
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
 // Get the header
-var header = document.getElementById("header");
+var header = document.getElementById("myHeader");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
@@ -17,4 +15,3 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 } 
-// ADD HEADER FINISH
