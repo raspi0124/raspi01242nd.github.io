@@ -1,50 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial;
+
+<style type="text/css">
+/* スタイル適当です */
+.nav {
+    display: table;
+    width: 100% !important;
+}
+.nav img{
+	width: 20%;
+
+}
+.nav__item {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
+.nav_item:focus {
+
+
+
 }
 
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+.nav {
+	list-style: none;
+	background:transparent;
+
 }
 
-.content {
-  padding: 16px;
+.nav {
+	display: inline-block;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
+.nav{
+	background:red;
+	padding-top: 5px;
 }
 </style>
-</head>
-<body>
-
-<div class="top-container">
-  <h1>Scroll Down</h1>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
-
 <div class="header" id="myHeader">
-  <h2>My Header</h2>
+<div class="header">
+<ul class="nav">
+    <li class="nav__item"><img src="calendar.png"><figcaption>Calendar</figcaption></li>
+    <li class="nav__item"><img src="cloud-computing.png"><figcaption>Cloud Computing</figcaption></li>
+    <li class="nav__item"><img src="lock.png"><figcaption>Lock</figcaption></li>
+    <li class="nav__item"><img src="save.png"><figcaption>Save</figcaption></li>
+    <li class="nav__item"><img src="search.png"><figcaption>Search</figcaption></li>
+</ul>
 </div>
+</div>
+
+
 
 <div class="content">
   <h3>On Scroll Sticky Header</h3>
